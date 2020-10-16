@@ -38,5 +38,5 @@ app.get("/photo", async (req, res) => {
 app.listen(3000, async () => {
   console.log("Example app listening on port 3000!");
   // 启动机器人
-  // startRobot();
+  startRobot();
 });
