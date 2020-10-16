@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wechat Robot</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="wea-wrap">
+            <img src="<%= image %>" alt="<%= content %>">
+
+            <div class="wea-infos">
+                <div class="wea-weather">
+                    <em><%= tem %></em>
+                    <img src="<%= weaImg %>" alt="<%= wea %>">
+                    <b><%= wea %></b>
+                    <span class="pdin-lr5"><%= humidity %></span>
+                    <span class="pdin-lr5"><%= wind %></span>
+                </div>
+                <div class="wea-tips">
+                    <p><%= tips %></p>
+                </div>
+
+                <div class="meet-days">
+                    <span><%= today %></span>
+                    <span class="split">-</span>
+                    <span>今天是我们相识的第 <%= diffDays %> 天</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-group">
+            <p class="text-title"><%= date %></p>
+            <p class="text-cnt"><%= content %></p>
+        </div>
+    </div>
+</body>
+
+</html>
